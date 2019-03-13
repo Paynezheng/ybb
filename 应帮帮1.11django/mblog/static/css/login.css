@@ -1,0 +1,93 @@
+.login_frame_content{
+    width: 400px;
+    min-height: 240px;
+    margin: 0 auto;
+	overflow: hidden;
+}
+
+.login_frame_content .form-group {
+    position: relative;
+    border: 1px solid #9B9B9B;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    background: #ffffFF;
+    padding-left: 20px;
+    margin-bottom: 21px;
+}
+.login_frame_content .form-checkCode > input,
+.login_frame_content .form-group > input {
+    background: 0 0;
+    border: 0 none;
+    font-size: 14px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    outline: 0;
+}
+
+.login_frame_content .user_inputWarning{
+    position: absolute;
+    top: -20px;
+	color: rgb(229,116,107);
+	/*margin-top: -7px;
+    margin-bottom: 2px;
+    padding: 0 8px;*/
+}
+
+.login_frame_content .loginBtn{
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    color: #F3F9FF;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    background: #3377FF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 130px;
+}
+
+.login_frame_content .form_other{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    color: #9B9B9B;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.login_frame_content .form_other .checkbox{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin: 0;
+    margin-right: 127px;
+}
+
+.a.btn {
+    color: #333;
+}
+
+.newBtn{
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    color: #F3F9FF;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    background: #3377FF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 130px;
+}

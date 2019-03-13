@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>应帮帮1.11个人中心</title>
+	<script src={%  static "js/jquery.min.js"%}></script>
+	<script src={%  static "js/bootstrap.min.js"%}></script>
+    <script src={%  static "js/biubiuhead.js"%}></script>
+    	<link rel="stylesheet" href={% static "css/bootstrap.min.css"%}>
+	<link rel="stylesheet" href={% static "css/login.css" %}>
+
+</head>
+<body onload="getNowDate()">
+
+<ul class="list-inline">
+		<li><div class="left">
+			<div class="logo"><a data-ajax href="../" ><img class="navbar-logoInner" src={% static "images/ybb_logo.png" %} href="../"></a></div></div>
+		</li>
+		<li><div class="middle">
+<form class="form-search">
+<input class="input-medium search-query"  id="search_input" type="text" style="border-radius: 10px" /> <button type="submit" class="btn" id="search_button">查找</button>
+			</form>
+		</div></li>
+		</li>
+		<li><div class="right">
+
+
+
+	<li class="navbar-loginButton"><span class="btn" data-toggle="modal" data-target="#myModal"> 登录</span><a class="btn"  href="/res/" style="color: #333">注册</a></li>
+
+
+
+		</div></li>
+
+	<li class="fl"><span id="dateinfo"></span>
+	</li>
+
+</ul>
+
+<nav class='navbar navbar-default' role='navigation'>
+	<div class='container-fluid'>
+	<div>
+		<ul class='nav navbar-nav'>
+
+		<li><a href='../'>主页</a></li>
+
+
+			<li  class='active'><a href='/userpage/'>个人中心</a></li>
+
+			<li><a href='/shop/'>应城</a></li>
+
+			<li><a href='/bbs/'>论坛</a></li>
+			<li class='dropdown'>
+				<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+					更多
+					<b class='caret'></b>
+				</a>
+				<ul class='dropdown-menu'>
+					<li><a href='#'>更多1</a></li>
+					<li><a href='#'>更多2</a></li>
+					<li><a href='#'>更多3</a></li>
+					<li class='divider'></li>
+					<li><a href='#'>好友招募</a></li>
+					<li class='divider'></li>
+					<li><a href='#'>本站说明</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+</nav>
+
+
+
+
+<div class='modal fade' id='myModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>
+                  ×
+            </button>
+                            <h4 class='modal-title' id='myModalLabel'>
+                登录
+            </h4>
+                        </div>
+                        <div class='modal-body'>
+
+
+
+
+
+
+<div class='login_frame'>
+<div class='login_frame_content'>
+<div class='form-group'><input type='text' id='user-inputUsername' value='' placeholder='用户名'></div>
+<div class='form-group'><input type='password' id='user-inputPassword' value='' placeholder='密码'></div>
+
+<div class='form_other'>
+  <div class='user_inputWarning'></div>
+  <div class='checkbox'>
+    <label class='small'>
+      <input id='login_state' type='checkbox' checked='checked'>记住登录状态</label></div>
+
+
+
+
+
+</div>
+
+ <button id='user-inputlogin'   class='loginBtn'>登录</button>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+                        </div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="breadcrumb eye-protector-processed" style="font-size:20px">
+				<td>
+					欢迎回来
+				</td>
+				<li>
+					<a href=/userpage/>个人信息</a> <span class="divider">/</span>
+				</li>
+				<li>
+					<a href=/userpage1/>密码更改</a> <span class="divider">/</span>
+				</li>
+				<li>
+					<a href="#">头像设置</a> <span class="divider">/</span>
+				</li>
+			</ul>
+<div id="settingContent" style="width:1920px">
+
+
+
+
+
+
+    <div style="width:100%; height:auto;margin:0px auto;">
+    <div style="position:absolute;left:40%;right:40%;">
+<div id="html5uploader-head_upload_2" class="html5uploader-button" style="font-size:20px;height: 30px; overflow: hidden; position: relative; margin-left:150px; width: 80px;">
+    <a id="head_upload" class="btn-public btn-replace" href="javascript:void(0)">上传头像
+    </a>
+    <a href="javascript:void(0);" id="head_upload_2" class="btn-public btn-replace" style="display: none;margin-left:150px">上传头像
+    </a>
+    <input type="file" style="font-size: 30px; opacity: 0; position: absolute; right: -3px; top: -3px; z-index: 999;">
+</div>
+
+	<p class="public-tip" style="font-size:20px;margin-left:0px">
+	<i class="icon-tip"></i>提示：格式支持 jpg、gif、png、jpeg、bmp文件大小不超过2MB</p>
+    <ul class="list-inline">
+        <li>
+			<div class="img-show max">
+				<img src={% static "images/30.png" %} id="preview_large" style="margin-left:0px">
+				<i class="show-cbg"></i>
+			</div>
+
+			<p class="img-size" style="font-size:20px;margin-left:0px">90*90像素</p>
+
+
+</li>
+		<li>
+			<div class="img-show middle">
+				<img src={% static "images/60.png" %} id="preview_middle"style="margin-left:0px">
+				<i class="show-cbg"></i>
+			</div>
+			<p class="img-size" style="font-size:20px;">60*60像素</p>
+        </li>
+        <li>
+			<div class="img-show min">
+				<img src={% static "images/90.png" %} id="preview_tiny"style="margin-left:0px">
+				<i class="show-cbg"></i>
+			</div>
+			<p class="img-size" style="font-size:20px;margin-left:0px">30*30像素</p>
+        </li>
+
+
+</ul>
+	<form id="head_update_form">
+		<input type="hidden" name="axisX" value="" id="x">
+		<input type="hidden" name="axisY" value="" id="y">
+		<input type="hidden" name="width" value="" id="w">
+		<input type="hidden" name="height" value="" id="h">
+		<input type="hidden" name="fileRelativePath" value="" id="srcRFile">
+		<input type="hidden" name="fileTempPath" value="" id="srcTFile">
+		<input type="hidden" name="fileTempUrl" value="" id="srcUFile">
+	</form>
+	<div class="view" style="margin-left:10px">
+                <button  id="savePicture" class="newBtn">保存</button>
+              </div>
+</div>
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$("#saveHead").click(function(){
+		submitForm();
+	});
+
+});
+
+function submitForm() {
+    if ($.trim($('.wblock-action').html()) == "") {
+        $("#passwordSet").trigger("click");
+        return;
+    }
+    $.ajax({
+        type: 'post',
+        url: CONTEXTPATH + "/user/update/avatar.mooc",
+        data: $("#head_update_form").serializeArray(),
+        dataType: "json",
+        success: function (resultData) {
+            if (resultData.result == "1" || resultData.result == 1) { //成功
+                var avatarPath = resultData.avatarPath;
+                $(".model-img .user-max").attr("src", CONTEXTPATH + avatarPath + "90.png");
+                $(".dk-selected .user-header").attr("src", CONTEXTPATH + avatarPath + "30.png");
+                $.dialog.success(Msg.get("userSet.avatar.success"));
+            } else if (resultData.result == "2" || resultData.result == 2) {
+                $.dialog.success(Msg.get("userSet.avatar.success"));
+            } else {
+                $.dialog.error(resultData.errorMsg);
+            }
+        },
+        error: function () {
+        }
+    })
+}
+</script></div>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>应帮帮1.11应城</title>
+	<script src={%  static "js/jquery.min.js"%}></script>
+	<script src={%  static "js/bootstrap.min.js"%}></script>
+    <script src={%  static "js/biubiuhead.js"%}></script>
+    	<link rel="stylesheet" href={% static "css/bootstrap.min.css"%}>
+	<link rel="stylesheet" href={% static "css/index.css" %}>
+	<link rel="stylesheet" href={% static "css/login.css" %}>
+    <link rel="stylesheet" href={% static "css/shop.css" %}>
+</head>
+<body onload="getNowDate()">
+
+<ul class="list-inline">
+		<li><div class="left">
+			<div class="logo"><a data-ajax href="../" ><img class="navbar-logoInner" src={% static "images/ybb_logo.png" %} href="../"></a></div></div>
+		</li>
+		<li><div class="middle">
+<form class="form-search">
+<input class="input-medium search-query"  id="search_input" type="text" style="border-radius: 10px" /> <button type="submit" class="btn" id="search_button">查找</button>
+			</form>
+		</div></li>
+		</li>
+		<li><div class="right">
+
+
+
+	<li class="navbar-loginButton"><span class="btn" data-toggle="modal" data-target="#myModal"> 登录</span><a class="btn"  href="/res/" style="color: #333">注册</a></li>
+
+
+
+		</div></li>
+	<li class="fl"><span id="dateinfo"></span>
+	</li>
+</ul>
+
+<nav class='navbar navbar-default' role='navigation'>
+	<div class='container-fluid'>
+	<div>
+		<ul class='nav navbar-nav'>
+
+		<li><a href='../'>主页</a></li>
+
+
+			<li><a href='/userpage/'>个人中心</a></li>
+
+			<li  class='active'><a href='/shop/'>应城</a></li>
+
+			<li><a href='/bbs/'>论坛</a></li>
+			<li class='dropdown'>
+				<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+					更多
+					<b class='caret'></b>
+				</a>
+				<ul class='dropdown-menu'>
+					<li><a href='#'>更多1</a></li>
+					<li><a href='#'>更多2</a></li>
+					<li><a href='#'>更多3</a></li>
+					<li class='divider'></li>
+					<li><a href='#'>好友招募</a></li>
+					<li class='divider'></li>
+					<li><a href='#'>本站说明</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+</nav>
+
+
+
+
+<div class='modal fade' id='myModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>
+                  ×
+            </button>
+                            <h4 class='modal-title' id='myModalLabel'>
+                登录
+            </h4>
+                        </div>
+                        <div class='modal-body'>
+
+
+
+
+
+
+<div class='login_frame'>
+<div class='login_frame_content'>
+<div class='form-group'><input type='text' id='user-inputUsername' value='' placeholder='用户名'></div>
+<div class='form-group'><input type='password' id='user-inputPassword' value='' placeholder='密码'></div>
+
+<div class='form_other'>
+  <div class='user_inputWarning'></div>
+  <div class='checkbox'>
+    <label class='small'>
+      <input id='login_state' type='checkbox' checked='checked'>记住登录状态</label></div>
+
+
+
+
+
+</div>
+
+ <button id='user-inputlogin'   class='loginBtn'>登录</button>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+                        </div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="shop_text">
+<div style="font-size:20px">
+欢迎来到应城</div>
+没有硬币？请进入<a class=text style="font-size:20px" href="/userpage/">用户中心</a>完成任务
+</div>
+<div class="shop_frame">
+<ul class="list-inline">
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/black_shop.jpg" %} >
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+5应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/black_shop.jpg" %} >
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+5应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/black_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+5应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/black_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+5应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/black_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+5应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/black_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+5应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/yellow_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+10应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/yellow_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+10应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/yellow_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+10应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/yellow_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+10应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/yellow_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+10应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/yellow_shop.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+10应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/20180613213927.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+15应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/20180613213927.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+15应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/20180613213927.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+15应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/20180613213927.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+15应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/20180613213927.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+15应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+<li>
+<div class="shop_frame_content">
+<img src={% static "images/20180613213927.jpg" %}>
+<div class="yingBi">
+<div class="text" style="text-align:center;">
+
+15应币
+</div>
+</div>
+<botton class="shopBtn">购买</botton>
+</div>
+</li>
+
+
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+.bbs_frame{
+margin-left:25px;
+}
+
+.bbs_frame_content{
+    position: relative;
+    height: 100px;
+    background: #ffffff;
+
+}
+
+.bbs_frame_content > img{
+width:70px;
+height:70px;
+}
+.bbs_frame_content.wenzi{
+width:70px;
+height:30px;
+}
+.card_frame{
+
+height:70px;
+background: #ffffff;
+}
+.card_img >img{
+width:70px;
+height:70px;
+}
+.card_username{
+width:100px;
+height:70px;
+/*
+background:#D200D2;
+*/
+}
+.card_title{
+width:600px;
+height:70px;
+/*
+background:#CE0000;
+*/
+}
+.card_title2{
+width:600px;
+height:70px;
+/*
+background:#CE0000;
+*/
+}
+.card_xuanshang{
+width:100px;
+height:70px;
+/*
+background:#D200D2;
+*/
+}
+.yingzhe_frame{
+height:50px;
+padding: 6px 12px;
+padding-top: 6px;
+padding-right: 12px;
+padding-bottom: 6px;
+padding-left: 12px;
+}
+.yingzhe_img>img{
+width:35px;
+height:35px;
+}
+.yingzhe_username{
+width:100px;
+height:35px;
+}
+.yingzhe_maohao{
+width:3px;
+height:35px;
+}
+.yingzhe_respond{
+width:600px;
+height:35px;
+}

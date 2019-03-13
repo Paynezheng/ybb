@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS reset */
+
+
+/*×¢²áÒ³Ãæ*/
+.login_bj{ background:url(../images/bj_zhuce.jpg) no-repeat top center;}
+.zhuce_body{ margin:0px auto;; width:100%; height:auto;}
+.zhuce_body .zhuce_kong{ position:absolute; top:50%; left:50%; width:600px; height:478px; margin-left:-300px; margin-top:-239px;}
+.zhuce_body .zhuce_kong .zc{width:600px; height:408px;}
+.zhuce_body .zhuce_kong .zc .bj_bai{ margin:0px auto; width:314px; height:408px; padding-left:0px;}
+.zhuce_body .zhuce_kong .zc .bj_bai h3{ font:16px/70px "Î¢ÈíÑÅºÚ", "ºÚÌå"; color:#333333; width:236px; text-align:center;}
+.zhuce_body .zhuce_kong .zc .bj_right{ margin:0px auto;width:185px; height:408px; padding-left:51px; background:#f8f8f8;}
+.zhuce_kong > p{font:16px/70px "Î¢ÈíÑÅºÚ", "ºÚÌå"; text-align:center; color:#fff;}
+.zhuce_body .zhuce_kong .zc .bj_bai .kuang_txt{ width:236px; height:32px; border:1px solid #dddddd; line-height:32px; padding-left:32px; color:#b1a9a9;  margin-bottom:10px; }
+.zhuce_body .zhuce_kong .zc .bj_bai .btn_zhuce{ width:236px; height:33px; background:#37b5f9; font-size:14px; line-height:33px; text-align:center; border:0px; color:#fff; border-radius:3px; cursor:pointer;}
+
+.zhuce_body .zhuce_kong .zc .bj_bai .phone{background:url(../images/zc_06.jpg) no-repeat 10px 10px;}
+.zhuce_body .zhuce_kong .zc .bj_bai .email{background:url(../images/zc_12.jpg) no-repeat 10px 10px;}
+.zhuce_body .zhuce_kong .zc .bj_bai .possword{background:url(../images/zc_16.jpg) no-repeat 10px 10px;}
+.zhuce_body .zhuce_kong .zc .bj_bai .yanzm{background:url(../images/zc_19.jpg) no-repeat 10px 10px; margin-bottom:0px;}
+
+.zhuce_body .zhuce_kong .zc .bj_bai .hui_kuang{ float:left;margin: 5px 0 0 40px; width:97px; height:45px; border:1px solid #dddddd;}
+.zhuce_body .zhuce_kong .zc .bj_bai .shuaxin{ float:left;margin: 6px 0 0 20px; width:14px; height:14px;}
+.zhuce_body .zhuce_kong .zc .bj_bai div{ float:left;width:100%; line-height:43px;}
+.zhuce_body .zhuce_kong .zc .bj_bai div input{float:left; margin-top:15px;}
+.zhuce_body .zhuce_kong .zc .bj_bai div span{ padding-left:5px;}
+.zhuce_body .zhuce_kong .zc .bj_bai div .lan{ color:#19aaf8; padding-left:5px;}
+
+
+
