@@ -1,0 +1,220 @@
+﻿
+{% extends 'head.html' %}
+{% load staticfiles %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row-fluid eye-protector-processed">
+		<div class="span12 eye-protector-processed">
+			<ul class="breadcrumb eye-protector-processed" style="font-size:20px">
+				<td>
+					欢迎回来
+				</td>
+
+				<li>
+					<a href="#">个人信息</a> <span class="divider">/</span>
+				</li>
+				<li>
+					<a href="/userpage1/">密码更改</a> <span class="divider">/</span>
+				</li>
+				<li>
+					<a href="/userpage2/">头像设置</a> <span class="divider">/</span>
+				</li>
+			</ul>
+			<h3>
+				个人资料
+			</h3> XXX
+            <div class="view">
+                <div class="alert "  style="transition: background-color 0.3s ease; border-color: rgba(0, 0, 0, 0.35); color: rgb(0, 0, 0); background-color: rgb(193, 230, 198);">
+                  <button type="button" class="close" data-dismiss="alert">×</button>
+                  <h4 class="eye-protector-processed" style="border-color: rgba(0, 0, 0, 0.35); color: rgb(0, 0, 0);">提示!</h4>
+                  <strong>警告!</strong> 请注意保持头像文明!</div>
+              </div>
+            <span class="label" style="color:rgb(0,0,0);font-size:18px">应者</span>
+		</div>
+	</div>
+	<div class="row-fluid eye-protector-processed">
+	<ul class="list-inline">
+	<li style="position:relative;bottom:100px;">
+		
+			<img alt="140x140" src={% static "images/20180613213927.jpg" %}  width="200" height="200"/>
+		
+		</li>
+<li>
+			<dl >
+				<dt style="color:rgb(255,255,255);font-size:30px">
+					你发现了彩蛋！ 
+				</dt>
+				<dd style="color:rgb(255,255,255);font-size:8px">
+					哈哈哈
+				</dd>
+				<dt>
+					手机号
+				</dt>
+				<dd>
+					...
+				</dd>
+					<dt>
+					邮箱
+				</dt>
+				<dd>
+					...
+				</dd>
+
+				<dt>
+					应币数量
+				</dt>
+				<dd>
+					...
+				</dd>
+				<dt>
+					已发帖
+				</dt>
+				<dd>
+					...
+				</dd>
+				<dt>
+					已接贴
+				</dt>
+				<dd>
+					...
+				</dd>
+				<dd>
+					...
+				</dd>
+			</dl>
+		
+		</li>
+		</ul>
+	</div>
+
+    <div class="view" >
+                <br class="thumbnails">
+                    <br>
+
+
+                </br>
+
+                      <li style="font-size:26px;list-style:none;">
+                    已发帖子:
+                </li>
+                <ul class="list-inline">
+                    <li class="span4" style="
+    width: 33%;">
+                    <div class="thumbnail" > <a href="/bbs/"><img alt="300x200" src={% static "images/zc_03.jpg" %}></a>
+                      
+                        <h3>冯诺尔曼结构</h3>
+                        <p>也称普林斯顿结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置。</p>
+                        <p><a class="btn btn-primary" href="/bbs/">浏览</a> </p>
+                     
+                    </div>
+                  </li>
+                  <li class="span4" style="
+    width: 33%;">
+                    <div class="thumbnail" > <a href="/bbs/"><img alt="300x200" src={% static "images/zc_06.jpg" %}></a>
+                      
+                        <h3>哈佛结构</h3>
+                        <p>哈佛结构是一种将程序指令存储和数据存储分开的存储器结构，它的主要特点是将程序和数据存储在不同的存储空间中，进行独立编址。</p>
+                        <p><a class="btn btn-primary" href="/bbs/">浏览</a> </p>
+                      
+                    </div>
+                  </li>
+                  <li class="span4" style="
+    width: 33%;">
+                    <div class="thumbnail" > <a href="/bbs/"><img alt="300x200" src={% static "images/zc_10.jpg" %}></a>
+                      
+                        <h3>改进型哈佛结构</h3>
+                        <p>改进型的哈佛结构具有一条独立的地址总线和一条独立的数据总线，两条总线由程序存储器和数据存储器分时复用，使结构更紧凑。</p>
+                        <p><a class="btn btn-primary" href="/bbs/">浏览</a> </p>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+	<div class="row-fluid eye-protector-processed">
+		<div class="span12 eye-protector-processed">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>
+							购买记录
+						</th>
+						<th>
+							商品
+						</th>
+						<th>
+							购买时间
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="success">
+						<td class="eye-protector-processed">
+							1
+						</td>
+						<td class="eye-protector-processed">
+							TB - Monthly
+						</td>
+						<td class="eye-protector-processed">
+							01/04/2012
+						</td>
+					</tr>
+					<tr class="error">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+					</tr>
+					<tr class="warning">
+						<td class="eye-protector-processed">
+							3
+						</td>
+						<td class="eye-protector-processed">
+							TB - Monthly
+						</td>
+						<td class="eye-protector-processed">
+							03/04/2012
+						</td>
+					</tr>
+					<tr class="info">
+						<td class="eye-protector-processed">
+							4
+						</td>
+						<td class="eye-protector-processed">
+							TB - Monthly
+						</td>
+						<td class="eye-protector-processed">
+							04/04/2012
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

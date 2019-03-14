@@ -1,0 +1,43 @@
+.shop_frame{
+margin-left:25px;
+}
+
+.shop_frame_content{
+    position: relative;
+
+    width: 140px;
+    height: 200px;
+
+    background: #ffffFF;
+
+}
+
+.shop_text{
+margin-left:25px;
+}
+
+.shop_frame_content > img{
+width:140px;
+height:140px;
+}
+.shop_frame_content .yingBi{
+width:140px;
+height:25px;
+}
+.shop_frame_content .shopBtn{
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 25px;
+    font-size: 14px;
+    color: #F3F9FF;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    background: #3377FF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 35px;
+}
