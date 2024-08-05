@@ -1,4 +1,4 @@
-certifi==2018.4.16
+certifi==2024.7.4
 Django==2.0.6
 django-markdown-deux==1.0.5
 markdown2==2.3.5
